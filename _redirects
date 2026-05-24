@@ -1,0 +1,24 @@
+# Pretty per-team URLs that scroll to the right card
+/u11        /#u11        302
+/u13f       /#u13f       302
+/u13m       /#u13m       302
+/u15f       /#u15f       302
+/u15m       /#u15m       302
+/u17f       /#u17f       302
+/u17m       /#u17m       302
+
+# Coach handout shortcut
+/coaches    /Capital_Basketera_2026_MASTER_Coaches_Handout.pdf  302
+/manual     /Capital_Basketera_2026_MASTER_Coaches_Handout.pdf  302
+
+# Per-team PDF shortcuts
+/u11/pdf    /Capital_Basketera_2026_Team_u11.pdf   302
+/u13f/pdf   /Capital_Basketera_2026_Team_u13f.pdf  302
+/u13m/pdf   /Capital_Basketera_2026_Team_u13m.pdf  302
+/u15f/pdf   /Capital_Basketera_2026_Team_u15f.pdf  302
+/u15m/pdf   /Capital_Basketera_2026_Team_u15m.pdf  302
+/u17f/pdf   /Capital_Basketera_2026_Team_u17f.pdf  302
+/u17m/pdf   /Capital_Basketera_2026_Team_u17m.pdf  302
+
+# SPA-style fallback so 404s go home (cleaner than Netlify default)
+/*          /index.html  200

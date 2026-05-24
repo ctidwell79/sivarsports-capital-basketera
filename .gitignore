@@ -1,0 +1,13 @@
+# Netlify
+.netlify
+
+# OS junk
+.DS_Store
+Thumbs.db
+
+# Editor
+.vscode/
+.idea/
+
+# Lock files
+*.lock

@@ -1,0 +1,56 @@
+# Netlify config for capitalbasketera.sivarsports.com
+# Sivar Sports Academy — Capital Basketera 2026
+
+[build]
+  # Static site — no build step needed
+  publish = "."
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Frame-Options = "SAMEORIGIN"
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+    Permissions-Policy = "geolocation=(), microphone=(), camera=()"
+
+[[headers]]
+  for = "/*.pdf"
+  [headers.values]
+    Content-Disposition = "inline"
+    Cache-Control = "public, max-age=86400"
+
+[[headers]]
+  for = "/index.html"
+  [headers.values]
+    Cache-Control = "public, max-age=300, must-revalidate"
+    # short cache so the next-game countdown stays fresh
+
+# Make pretty paths work
+[[redirects]]
+  from = "/u11"
+  to = "/#u11"
+  status = 302
+[[redirects]]
+  from = "/u13f"
+  to = "/#u13f"
+  status = 302
+[[redirects]]
+  from = "/u13m"
+  to = "/#u13m"
+  status = 302
+[[redirects]]
+  from = "/u15f"
+  to = "/#u15f"
+  status = 302
+[[redirects]]
+  from = "/u15m"
+  to = "/#u15m"
+  status = 302
+[[redirects]]
+  from = "/u17f"
+  to = "/#u17f"
+  status = 302
+[[redirects]]
+  from = "/u17m"
+  to = "/#u17m"
+  status = 302

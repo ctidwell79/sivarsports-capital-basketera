@@ -1,0 +1,371 @@
+<!DOCTYPE html><html lang="es"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Capital Basketera 2026 · Sivar Sports Academy</title><meta name="description" content="Calendario completo SSA · Capital Basketera 2026 · 7 equipos · 27 juegos."><meta property="og:title" content="Capital Basketera 2026 · SSA"><meta property="og:description" content="Sivar Sports Academy · 7 equipos · 27 juegos · 28-30 mayo 2026."><meta property="og:type" content="website"><meta property="og:url" content="https://capitalbasketera.sivarsports.com"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet"><style>
+  :root {
+    --navy: #1E2D58; --coral: #E8607A; --gold: #F5C518;
+    --bg: #FAFAF7; --card: #FFFFFF;
+    --text: #1A1A1A; --muted: #6B6B6B; --line: #E5E5E5;
+    --u11: #FF6B6B; --u13f: #C44569; --u13m: #4ECDC4;
+    --u15f: #A66CFF; --u15m: #3D8BFD; --u17f: #FF9F1C; --u17m: #1E2D58;
+  }
+  *,*::before,*::after { box-sizing: border-box; }
+  body {
+    margin: 0; padding: 0; background: var(--bg); color: var(--text);
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    font-size: 16px; line-height: 1.5;
+  }
+  a { color: var(--navy); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+
+  .hero {
+    background: linear-gradient(135deg, var(--navy) 0%, #2a3f7a 100%);
+    color: white; padding: 3rem 1.5rem 2rem; text-align: center;
+  }
+  .hero-pretitle {
+    font-family: 'Bebas Neue', sans-serif;
+    letter-spacing: 0.15em; color: var(--gold);
+    font-size: 1rem; margin-bottom: 0.5rem;
+  }
+  .hero h1 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: clamp(2.5rem, 6vw, 4.5rem); margin: 0;
+    letter-spacing: 0.05em; line-height: 1;
+  }
+  .hero-subtitle { font-size: 1.1rem; margin-top: 0.75rem; opacity: 0.9; }
+  .hero-dates { font-size: 0.95rem; margin-top: 0.3rem; opacity: 0.85; color: var(--gold); }
+  .hero-stats { display: flex; gap: 2rem; justify-content: center; margin-top: 2rem; flex-wrap: wrap; }
+  .hero-stat { text-align: center; }
+  .hero-stat-num { font-family: 'Bebas Neue', sans-serif; font-size: 2.5rem; color: var(--gold); line-height: 1; }
+  .hero-stat-label { font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.1em; opacity: 0.8; }
+  .ctc-tag {
+    margin-top: 1.5rem; font-family: 'Bebas Neue', sans-serif;
+    color: var(--coral); letter-spacing: 0.12em; font-size: 0.9rem;
+  }
+
+  main { max-width: 1100px; margin: 0 auto; padding: 2rem 1rem 4rem; }
+
+  .next-banner {
+    background: linear-gradient(90deg, var(--coral) 0%, #ff8395 100%);
+    color: white; padding: 1rem 1.5rem; border-radius: 12px;
+    margin-bottom: 1.5rem;
+    display: flex; align-items: center; gap: 1rem;
+    flex-wrap: wrap; justify-content: space-between;
+    box-shadow: 0 4px 12px rgba(232, 96, 122, 0.3);
+  }
+  .next-banner.live {
+    background: linear-gradient(90deg, #28a745 0%, #34c759 100%);
+    box-shadow: 0 4px 12px rgba(40, 167, 69, 0.3);
+    animation: pulse 2s infinite;
+  }
+  @keyframes pulse {
+    0%, 100% { box-shadow: 0 4px 12px rgba(40, 167, 69, 0.3); }
+    50% { box-shadow: 0 4px 20px rgba(40, 167, 69, 0.6); }
+  }
+  .next-banner.done { background: linear-gradient(90deg, var(--navy) 0%, #2a3f7a 100%); }
+  .next-banner-label {
+    font-size: 0.7rem; text-transform: uppercase;
+    letter-spacing: 0.1em; opacity: 0.9; margin-bottom: 0.2rem;
+  }
+  .next-banner-game {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 1.5rem; letter-spacing: 0.03em; line-height: 1.2;
+  }
+  .next-banner-meta { font-size: 0.85rem; opacity: 0.95; margin-top: 0.15rem; }
+  .next-banner-countdown {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 1.8rem; letter-spacing: 0.05em;
+    background: rgba(0,0,0,0.2);
+    padding: 0.5rem 1rem; border-radius: 8px;
+    min-width: 150px; text-align: center;
+  }
+
+  #filterArea {
+    position: sticky; top: 0; background: var(--bg);
+    padding: 0.75rem 0 0.5rem; z-index: 10;
+    border-bottom: 1px solid var(--line);
+    margin: 1rem 0 2rem;
+  }
+  .nav-section { margin: 0.4rem 0; }
+  .nav-label {
+    font-size: 0.7rem; text-transform: uppercase;
+    letter-spacing: 0.1em; color: var(--muted);
+    margin-bottom: 0.4rem; text-align: center;
+  }
+  .filter-pills { display: flex; gap: 0.5rem; flex-wrap: wrap; justify-content: center; }
+  .filter-pills button {
+    background: var(--card); border: 1px solid var(--line);
+    padding: 0.45rem 0.95rem; border-radius: 999px;
+    font-size: 0.85rem; font-weight: 600; cursor: pointer;
+    color: var(--text); transition: all 0.15s; font-family: inherit;
+  }
+  .filter-pills button:hover { border-color: var(--navy); color: var(--navy); }
+  .filter-pills button.active { background: var(--navy); color: white; border-color: var(--navy); }
+  .filter-pills.day button.active { background: var(--coral); border-color: var(--coral); }
+
+  .section-heading {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 2rem; color: var(--navy);
+    letter-spacing: 0.05em; margin: 3rem 0 1rem;
+    padding-bottom: 0.5rem; border-bottom: 3px solid var(--gold);
+  }
+
+  .master-schedule {
+    width: 100%; border-collapse: collapse;
+    background: var(--card); border-radius: 8px;
+    overflow: hidden; box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+    font-size: 0.9rem;
+  }
+  .master-schedule th {
+    background: var(--navy); color: white;
+    padding: 0.75rem; text-align: left;
+    font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.08em;
+  }
+  .master-schedule td { padding: 0.65rem 0.75rem; border-bottom: 1px solid var(--line); }
+  .master-schedule tr:last-child td { border-bottom: none; }
+  .master-schedule tr:hover { background: #FAFAFA; }
+
+  .team-tag {
+    display: inline-block; padding: 0.15rem 0.6rem;
+    border-radius: 999px; font-size: 0.7rem; font-weight: 700;
+    color: white; letter-spacing: 0.04em;
+  }
+  .team-tag--u11 { background: var(--u11); }
+  .team-tag--u13f { background: var(--u13f); }
+  .team-tag--u13m { background: var(--u13m); }
+  .team-tag--u15f { background: var(--u15f); }
+  .team-tag--u15m { background: var(--u15m); }
+  .team-tag--u17f { background: var(--u17f); }
+  .team-tag--u17m { background: var(--u17m); }
+  .team-tag:hover { text-decoration: none; opacity: 0.85; }
+
+  .team-card {
+    background: var(--card); border-radius: 12px;
+    padding: 1.5rem; margin-bottom: 1.5rem;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+    scroll-margin-top: 200px;
+  }
+  .team-card.hidden { display: none; }
+  .team-header {
+    margin-bottom: 1rem;
+    display: flex; justify-content: space-between;
+    align-items: flex-start; gap: 1rem; flex-wrap: wrap;
+  }
+  .team-title { display: flex; align-items: baseline; gap: 0.75rem; flex-wrap: wrap; }
+  .team-title h2 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 2rem; margin: 0; color: var(--navy);
+    letter-spacing: 0.04em;
+  }
+  .team-short {
+    background: var(--coral); color: white;
+    padding: 0.2rem 0.6rem; border-radius: 6px;
+    font-weight: 700; font-size: 0.85rem;
+  }
+  .team-dob { color: var(--muted); font-size: 0.9rem; }
+  .team-actions { display: flex; gap: 0.5rem; }
+  .btn {
+    display: inline-flex; align-items: center; gap: 0.35rem;
+    padding: 0.5rem 0.85rem; border-radius: 6px;
+    font-size: 0.8rem; font-weight: 600;
+    text-decoration: none; color: white;
+    transition: opacity 0.15s, transform 0.15s;
+  }
+  .btn:hover { opacity: 0.9; transform: translateY(-1px); text-decoration: none; }
+  .btn-wa { background: #25D366; }
+  .btn-pdf { background: var(--navy); }
+
+  .groups {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 1rem; margin-bottom: 1.5rem;
+  }
+  .group {
+    background: #F5F5F2; padding: 1rem;
+    border-radius: 8px; border-left: 3px solid var(--line);
+  }
+  .group--sivar { border-left-color: var(--coral); background: #FFF6F8; }
+  .group h4 {
+    margin: 0 0 0.5rem; font-size: 0.85rem;
+    text-transform: uppercase; letter-spacing: 0.05em; color: var(--navy);
+  }
+  .group ul { list-style: none; margin: 0; padding: 0; font-size: 0.9rem; }
+  .group li { padding: 0.25rem 0; }
+  .group--sivar li:first-child { font-weight: 700; color: var(--coral); }
+  .badge {
+    display: inline-block; background: var(--coral); color: white;
+    padding: 0.1rem 0.4rem; border-radius: 4px;
+    font-size: 0.65rem; font-weight: 700; letter-spacing: 0.05em;
+    margin-left: 0.25rem; vertical-align: middle;
+  }
+
+  .schedule-label {
+    margin: 0 0 0.5rem; font-size: 0.85rem;
+    text-transform: uppercase; letter-spacing: 0.05em; color: var(--navy);
+  }
+  .schedule { width: 100%; border-collapse: collapse; font-size: 0.9rem; }
+  .schedule th {
+    background: var(--navy); color: white;
+    padding: 0.5rem 0.75rem; text-align: left;
+    font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.08em;
+  }
+  .schedule td { padding: 0.55rem 0.75rem; border-bottom: 1px solid var(--line); }
+  .schedule tr:last-child td { border-bottom: none; }
+  .cell-time { font-weight: 700; color: var(--navy); }
+  .cell-rival { font-weight: 500; }
+  .cell-fecha { color: var(--muted); font-size: 0.85rem; }
+  .bye-row { background: #FAFAF7; color: var(--muted); }
+  .map-pin { opacity: 0.6; font-size: 0.85em; }
+
+  .venues {
+    list-style: none; padding: 0; margin: 1rem 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 0.75rem;
+  }
+  .venues li {
+    background: var(--card); padding: 1rem;
+    border-radius: 8px; box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+  }
+  .venues a { display: block; }
+  .venue-addr {
+    display: block; color: var(--muted);
+    font-size: 0.85rem; font-weight: 400; margin-top: 0.2rem;
+  }
+
+  footer {
+    background: var(--navy); color: white;
+    text-align: center; padding: 2.5rem 1rem; margin-top: 4rem;
+  }
+  footer .footer-tag {
+    font-family: 'Bebas Neue', sans-serif;
+    color: var(--coral); letter-spacing: 0.12em;
+    font-size: 1rem; margin-bottom: 0.5rem;
+  }
+  footer .footer-meta { font-size: 0.85rem; opacity: 0.7; margin-top: 1rem; }
+  footer a { color: var(--gold); }
+
+  @media (max-width: 640px) {
+    .hero { padding: 2rem 1rem 1.5rem; }
+    .hero-stats { gap: 1rem; }
+    .hero-stat-num { font-size: 2rem; }
+    main { padding: 1rem 0.75rem 3rem; }
+    .team-card { padding: 1rem; }
+    .master-schedule td, .schedule td { padding: 0.5rem; font-size: 0.85rem; }
+    .section-heading { font-size: 1.5rem; }
+    .next-banner-game { font-size: 1.2rem; }
+    .next-banner-countdown { font-size: 1.4rem; min-width: 110px; }
+  }
+</style></head><body><div class="hero"><div class="hero-pretitle">Sivar Sports Academy</div><h1>Capital Basketera 2026</h1><div class="hero-subtitle">Calendario oficial · 7 equipos SSA</div><div class="hero-dates">28-30 de mayo 2026</div><div class="hero-stats"><div class="hero-stat"><div class="hero-stat-num">7</div><div class="hero-stat-label">Equipos</div></div><div class="hero-stat"><div class="hero-stat-num">27</div><div class="hero-stat-label">Juegos</div></div><div class="hero-stat"><div class="hero-stat-num">5</div><div class="hero-stat-label">Sedes</div></div><div class="hero-stat"><div class="hero-stat-num">15</div><div class="hero-stat-label">Rivales</div></div></div><div class="ctc-tag">CTC · Campeones Trabajan Como Campeones</div></div><main><div id="nextBanner" class="next-banner" style="display:none;"><div><div class="next-banner-label" id="nextLabel">Próximo juego</div><div class="next-banner-game" id="nextGame">—</div><div class="next-banner-meta" id="nextMeta">—</div></div><div class="next-banner-countdown" id="nextCountdown">—</div></div><div id="filterArea"><div class="nav-section"><div class="nav-label">Filtrar por día</div><div class="filter-pills day" id="dayNav"><button data-day="all" class="active">Todos</button><button data-day="thu">Jueves</button><button data-day="fri">Viernes</button><button data-day="sat">Sábado</button></div></div><div class="nav-section"><div class="nav-label">Filtrar por equipo</div><div class="filter-pills team" id="teamNav"><button data-team="all" class="active">Todos</button><button data-team="u11">U11</button><button data-team="u13f">U13F</button><button data-team="u13m">U13M</button><button data-team="u15f">U15F</button><button data-team="u15m">U15M</button><button data-team="u17f">U17F</button><button data-team="u17m">U17M</button></div></div></div><section id="master"><h2 class="section-heading">Calendario completo</h2><table class="master-schedule"><thead><tr><th>Día</th><th>Hora</th><th>Equipo</th><th>Rival</th><th>Sede</th></tr></thead><tbody><tr data-team="u11" data-day="thu"><td class="cell-day">Jueves</td><td class="cell-time">9:00 AM</td><td><a href="#u11" class="team-tag team-tag--u11">U11M</a></td><td class="cell-rival">Academia Flores Island (GUA)</td><td class="cell-venue"><a href="https://www.google.com/maps/search/FESABAL+San+Salvador" target="_blank" rel="noopener">FESABAL 1 📍</a></td></tr><tr data-team="u15f" data-day="thu"><td class="cell-day">Jueves</td><td class="cell-time">11:00 AM</td><td><a href="#u15f" class="team-tag team-tag--u15f">U15F</a></td><td class="cell-rival">Grizzlies (GUA)</td><td class="cell-venue"><a href="https://www.google.com/maps/search/FESABAL+San+Salvador" target="_blank" rel="noopener">FESABAL 2 📍</a></td></tr><tr data-team="u17m" data-day="thu"><td class="cell-day">Jueves</td><td class="cell-time">11:00 AM</td><td><a href="#u17m" class="team-tag team-tag--u17m">U17M</a></td><td class="cell-rival">Grizzlies (GUA)</td><td class="cell-venue"><a href="https://www.google.com/maps/search/Polideportivo+Adolfo+Pineda+Santa+Tecla" target="_blank" rel="noopener">Adolfo Pineda, Tecla 📍</a></td></tr><tr data-team="u13m" data-day="thu"><td class="cell-day">Jueves</td><td class="cell-time">12:00 PM</td><td><a href="#u13m" class="team-tag team-tag--u13m">U13M</a></td><td class="cell-rival">Academia Flores Island (GUA)</td><td class="cell-venue"><a href="https://www.google.com/maps/search/FESABAL+San+Salvador" target="_blank" rel="noopener">FESABAL 1 📍</a></td></tr><tr data-team="u13f" data-day="thu"><td class="cell-day">Jueves</td><td class="cell-time">4:30 PM</td><td><a href="#u13f" class="team-tag team-tag--u13f">U13F</a></td><td class="cell-rival">BeSport (ESA)</td><td class="cell-venue"><a href="https://www.google.com/maps/search/BeSport+San+Salvador" target="_blank" rel="noopener">BeSport 📍</a></td></tr><tr data-team="u15m" data-day="thu"><td class="cell-day">Jueves</td><td class="cell-time">5:30 PM</td><td><a href="#u15m" class="team-tag team-tag--u15m">U15M</a></td><td class="cell-rival">BeSport (ESA)</td><td class="cell-venue"><a href="https://www.google.com/maps/search/BeSport+San+Salvador" target="_blank" rel="noopener">BeSport 📍</a></td></tr><tr data-team="u13m" data-day="fri"><td class="cell-day">Viernes</td><td class="cell-time">8:00 AM</td><td><a href="#u13m" class="team-tag team-tag--u13m">U13M</a></td><td class="cell-rival">The Process (GUA)</td><td class="cell-venue"><a href="https://www.google.com/maps/search/BeSport+San+Salvador" target="_blank" rel="noopener">BeSport · Duela 2 📍</a></td></tr><tr data-team="u17f" data-day="fri"><td class="cell-day">Viernes</td><td class="cell-time">8:00 AM</td><td><a href="#u17f" class="team-tag team-tag--u17f">U17F</a></td><td class="cell-rival">Leones (GUA)</td><td class="cell-venue"><a href="https://www.google.com/maps/search/FESABAL+San+Salvador" target="_blank" rel="noopener">FESABAL 1 📍</a></td></tr><tr data-team="u11" data-day="fri"><td class="cell-day">Viernes</td><td class="cell-time">9:00 AM</td><td><a href="#u11" class="team-tag team-tag--u11">U11M</a></td><td class="cell-rival">Leones (GUA)</td><td class="cell-venue"><a href="https://www.google.com/maps/search/BeSport+San+Salvador" target="_blank" rel="noopener">BeSport · Duela 1 📍</a></td></tr><tr data-team="u17m" data-day="fri"><td class="cell-day">Viernes</td><td class="cell-time">9:00 AM</td><td><a href="#u17m" class="team-tag team-tag--u17m">U17M</a></td><td class="cell-rival">Thunder (GUA)</td><td class="cell-venue"><a href="https://www.google.com/maps/search/FESABAL+San+Salvador" target="_blank" rel="noopener">FESABAL 2 📍</a></td></tr><tr data-team="u13f" data-day="fri"><td class="cell-day">Viernes</td><td class="cell-time">11:00 AM</td><td><a href="#u13f" class="team-tag team-tag--u13f">U13F</a></td><td class="cell-rival">Jaguares (ESA)</td><td class="cell-venue"><a href="https://www.google.com/maps/search/BeSport+San+Salvador" target="_blank" rel="noopener">BeSport · Duela 1 📍</a></td></tr><tr data-team="u15f" data-day="fri"><td class="cell-day">Viernes</td><td class="cell-time">11:00 AM</td><td><a href="#u15f" class="team-tag team-tag--u15f">U15F</a></td><td class="cell-rival">Capitalinos 503 (ESA)</td><td class="cell-venue"><a href="https://www.google.com/maps/search/BeSport+San+Salvador" target="_blank" rel="noopener">BeSport · Duela 2 📍</a></td></tr><tr data-team="u17f" data-day="fri"><td class="cell-day">Viernes</td><td class="cell-time">12:00 PM</td><td><a href="#u17f" class="team-tag team-tag--u17f">U17F</a></td><td class="cell-rival">Academia Flores Island (GUA)</td><td class="cell-venue"><a href="https://www.google.com/maps/search/FESABAL+San+Salvador" target="_blank" rel="noopener">FESABAL 1 📍</a></td></tr><tr data-team="u11" data-day="fri"><td class="cell-day">Viernes</td><td class="cell-time">1:00 PM</td><td><a href="#u11" class="team-tag team-tag--u11">U11M</a></td><td class="cell-rival">Jaguares (ESA)</td><td class="cell-venue"><a href="https://www.google.com/maps/search/BeSport+San+Salvador" target="_blank" rel="noopener">BeSport · Duela 1 📍</a></td></tr><tr data-team="u13m" data-day="fri"><td class="cell-day">Viernes</td><td class="cell-time">1:00 PM</td><td><a href="#u13m" class="team-tag team-tag--u13m">U13M</a></td><td class="cell-rival">Leones (GUA)</td><td class="cell-venue"><a href="https://www.google.com/maps/search/BeSport+San+Salvador" target="_blank" rel="noopener">BeSport · Duela 2 📍</a></td></tr><tr data-team="u15m" data-day="fri"><td class="cell-day">Viernes</td><td class="cell-time">1:00 PM</td><td><a href="#u15m" class="team-tag team-tag--u15m">U15M</a></td><td class="cell-rival">Banco Atlántida (Honduras)</td><td class="cell-venue"><a href="https://www.google.com/maps/search/BeSport+San+Salvador" target="_blank" rel="noopener">BeSport · Duela 3 📍</a></td></tr><tr data-team="u17m" data-day="fri"><td class="cell-day">Viernes</td><td class="cell-time">1:00 PM</td><td><a href="#u17m" class="team-tag team-tag--u17m">U17M</a></td><td class="cell-rival">Club Baqueros (COL)</td><td class="cell-venue"><a href="https://www.google.com/maps/search/FESABAL+San+Salvador" target="_blank" rel="noopener">FESABAL 2 📍</a></td></tr><tr data-team="u11" data-day="fri"><td class="cell-day">Viernes</td><td class="cell-time">4:00 PM</td><td><a href="#u11" class="team-tag team-tag--u11">U11M</a></td><td class="cell-rival">Grizzlies (GUA)</td><td class="cell-venue"><a href="https://www.google.com/maps/search/BeSport+San+Salvador" target="_blank" rel="noopener">BeSport · Duela 1 📍</a></td></tr><tr data-team="u13m" data-day="fri"><td class="cell-day">Viernes</td><td class="cell-time">4:00 PM</td><td><a href="#u13m" class="team-tag team-tag--u13m">U13M</a></td><td class="cell-rival">Santa Tecla (ESA)</td><td class="cell-venue"><a href="https://www.google.com/maps/search/BeSport+San+Salvador" target="_blank" rel="noopener">BeSport · Duela 2 📍</a></td></tr><tr data-team="u15f" data-day="fri"><td class="cell-day">Viernes</td><td class="cell-time">5:00 PM</td><td><a href="#u15f" class="team-tag team-tag--u15f">U15F</a></td><td class="cell-rival">Cachorritas (MEX)</td><td class="cell-venue"><a href="https://www.google.com/maps/search/BeSport+San+Salvador" target="_blank" rel="noopener">BeSport · Duela 3 📍</a></td></tr><tr data-team="u17m" data-day="fri"><td class="cell-day">Viernes</td><td class="cell-time">6:00 PM</td><td><a href="#u17m" class="team-tag team-tag--u17m">U17M</a></td><td class="cell-rival">Sonora (MEX)</td><td class="cell-venue"><a href="https://www.google.com/maps/search/FESABAL+San+Salvador" target="_blank" rel="noopener">FESABAL 2 📍</a></td></tr><tr data-team="u17f" data-day="fri"><td class="cell-day">Viernes</td><td class="cell-time">7:00 PM</td><td><a href="#u17f" class="team-tag team-tag--u17f">U17F</a></td><td class="cell-rival">Club Indios (RD)</td><td class="cell-venue"><a href="https://www.google.com/maps/search/BeSport+San+Salvador" target="_blank" rel="noopener">BeSport · Duela 3 📍</a></td></tr><tr data-team="u13f" data-day="sat"><td class="cell-day">Sábado</td><td class="cell-time">9:00 AM</td><td><a href="#u13f" class="team-tag team-tag--u13f">U13F</a></td><td class="cell-rival">Academia Flores Island (GUA)</td><td class="cell-venue"><a href="https://www.google.com/maps/search/Universidad+de+El+Salvador" target="_blank" rel="noopener">UES 📍</a></td></tr><tr data-team="u13m" data-day="sat"><td class="cell-day">Sábado</td><td class="cell-time">10:00 AM</td><td><a href="#u13m" class="team-tag team-tag--u13m">U13M</a></td><td class="cell-rival">Grizzlies (GUA)</td><td class="cell-venue"><a href="https://www.google.com/maps/search/FESABAL+San+Salvador" target="_blank" rel="noopener">FESABAL 2 📍</a></td></tr><tr data-team="u15m" data-day="sat"><td class="cell-day">Sábado</td><td class="cell-time">10:00 AM</td><td><a href="#u15m" class="team-tag team-tag--u15m">U15M</a></td><td class="cell-rival">The Process (GUA)</td><td class="cell-venue"><a href="https://www.google.com/maps/search/Universidad+de+El+Salvador" target="_blank" rel="noopener">UES 📍</a></td></tr><tr data-team="u17f" data-day="sat"><td class="cell-day">Sábado</td><td class="cell-time">2:00 PM</td><td><a href="#u17f" class="team-tag team-tag--u17f">U17F</a></td><td class="cell-rival">San Luis Santa Ana (ESA)</td><td class="cell-venue"><a href="https://www.google.com/maps/search/FESABAL+San+Salvador" target="_blank" rel="noopener">FESABAL 1 📍</a></td></tr><tr data-team="u17m" data-day="sat"><td class="cell-day">Sábado</td><td class="cell-time">3:00 PM</td><td><a href="#u17m" class="team-tag team-tag--u17m">U17M</a></td><td class="cell-rival">Academia Flores Island (GUA)</td><td class="cell-venue"><a href="https://www.google.com/maps/search/FESABAL+San+Salvador" target="_blank" rel="noopener">FESABAL 2 📍</a></td></tr></tbody></table></section><section id="teams"><h2 class="section-heading">Por equipo</h2><section class="team-card" id="u11" data-team="u11"><header class="team-header"><div class="team-title"><span class="team-short">U11M</span><h2>U11 Mixto</h2><span class="team-dob">Nacidos 2015–2016</span></div><div class="team-actions"><a href="https://wa.me/?text=%F0%9F%8F%80%20%2AU11%20Mixto%2A%20%E2%80%94%20Capital%20Basketera%202026%0A_Nacidos%202015%E2%80%932016_%0A%0A%F0%9F%93%85%20%2ACalendario%3A%2A%0A%E2%80%A2%20F1%20Jueves%209%3A00%20AM%20%E2%80%94%20vs%20Academia%20Flores%20Island%20%28GUA%29%20%E2%80%94%20FESABAL%201%0A%E2%80%A2%20F2%20Viernes%209%3A00%20AM%20%E2%80%94%20vs%20Leones%20%28GUA%29%20%E2%80%94%20BeSport%20%C2%B7%20Duela%201%0A%E2%80%A2%20F3%20Viernes%201%3A00%20PM%20%E2%80%94%20vs%20Jaguares%20%28ESA%29%20%E2%80%94%20BeSport%20%C2%B7%20Duela%201%0A%E2%80%A2%20F4%20Viernes%204%3A00%20PM%20%E2%80%94%20vs%20Grizzlies%20%28GUA%29%20%E2%80%94%20BeSport%20%C2%B7%20Duela%201%0A%E2%80%A2%20F5%20S%C3%A1bado%20%E2%80%94%20DESCANSO%20Fecha%205%0A%0A%F0%9F%93%8B%20Calendario%20completo%3A%20https%3A//capitalbasketera.sivarsports.com%0A%0A%2ACTC%20%E2%80%94%20Campeones%20Trabajan%20Como%20Campeones%2A" target="_blank" rel="noopener" class="btn btn-wa" title="Compartir por WhatsApp">💬 Compartir</a><a href="./Capital_Basketera_2026_Team_u11.pdf" download class="btn btn-pdf" title="Descargar PDF">⬇️ PDF</a></div></header><div class="groups"><div class="group group--sivar"><h4>Equipos en la categoría <span class="badge badge--sivar">SSA</span></h4><ul><li>Sivar Sports A (ESA)</li><li>Jaguares (ESA)</li><li>Leones (GUA)</li><li>Academia Flores Island (GUA)</li><li>Grizzlies (GUA)</li></ul></div></div><h4 class="schedule-label">Calendario · 4 juegos + 1 descanso</h4><table class="schedule"><thead><tr><th>Fecha</th><th>Día</th><th>Hora</th><th>Rival</th><th>Sede</th></tr></thead><tbody><tr><td class="cell-fecha">F1</td><td class="cell-day">Jueves</td><td class="cell-time">9:00 AM</td><td class="cell-rival">Academia Flores Island (GUA)</td><td class="cell-venue"><a href="https://www.google.com/maps/search/FESABAL+San+Salvador" target="_blank" rel="noopener">FESABAL 1 <span class="map-pin">📍</span></a></td></tr><tr><td class="cell-fecha">F2</td><td class="cell-day">Viernes</td><td class="cell-time">9:00 AM</td><td class="cell-rival">Leones (GUA)</td><td class="cell-venue"><a href="https://www.google.com/maps/search/BeSport+San+Salvador" target="_blank" rel="noopener">BeSport · Duela 1 <span class="map-pin">📍</span></a></td></tr><tr><td class="cell-fecha">F3</td><td class="cell-day">Viernes</td><td class="cell-time">1:00 PM</td><td class="cell-rival">Jaguares (ESA)</td><td class="cell-venue"><a href="https://www.google.com/maps/search/BeSport+San+Salvador" target="_blank" rel="noopener">BeSport · Duela 1 <span class="map-pin">📍</span></a></td></tr><tr><td class="cell-fecha">F4</td><td class="cell-day">Viernes</td><td class="cell-time">4:00 PM</td><td class="cell-rival">Grizzlies (GUA)</td><td class="cell-venue"><a href="https://www.google.com/maps/search/BeSport+San+Salvador" target="_blank" rel="noopener">BeSport · Duela 1 <span class="map-pin">📍</span></a></td></tr><tr class="bye-row"><td class="cell-fecha">F5</td><td class="cell-day">Sábado</td><td class="cell-time">—</td><td class="cell-rival" colspan="2"><em>DESCANSO Fecha 5</em></td></tr></tbody></table></section><section class="team-card" id="u13f" data-team="u13f"><header class="team-header"><div class="team-title"><span class="team-short">U13F</span><h2>U13 Femenino</h2><span class="team-dob">Nacidas 2013–2014</span></div><div class="team-actions"><a href="https://wa.me/?text=%F0%9F%8F%80%20%2AU13%20Femenino%2A%20%E2%80%94%20Capital%20Basketera%202026%0A_Nacidas%202013%E2%80%932014_%0A%0A%F0%9F%93%85%20%2ACalendario%3A%2A%0A%E2%80%A2%20F1%20Jueves%204%3A30%20PM%20%E2%80%94%20vs%20BeSport%20%28ESA%29%20%E2%80%94%20BeSport%0A%E2%80%A2%20F2%20Viernes%2011%3A00%20AM%20%E2%80%94%20vs%20Jaguares%20%28ESA%29%20%E2%80%94%20BeSport%20%C2%B7%20Duela%201%0A%E2%80%A2%20F3%20S%C3%A1bado%209%3A00%20AM%20%E2%80%94%20vs%20Academia%20Flores%20Island%20%28GUA%29%20%E2%80%94%20UES%0A%0A%F0%9F%93%8B%20Calendario%20completo%3A%20https%3A//capitalbasketera.sivarsports.com%0A%0A%2ACTC%20%E2%80%94%20Campeones%20Trabajan%20Como%20Campeones%2A" target="_blank" rel="noopener" class="btn btn-wa" title="Compartir por WhatsApp">💬 Compartir</a><a href="./Capital_Basketera_2026_Team_u13f.pdf" download class="btn btn-pdf" title="Descargar PDF">⬇️ PDF</a></div></header><div class="groups"><div class="group group--sivar"><h4>Equipos en la categoría <span class="badge badge--sivar">SSA</span></h4><ul><li>Sivar Sports A (ESA)</li><li>BeSport (ESA)</li><li>Jaguares (ESA)</li><li>Academia Flores Island (GUA)</li></ul></div></div><h4 class="schedule-label">Calendario · 3 juegos</h4><table class="schedule"><thead><tr><th>Fecha</th><th>Día</th><th>Hora</th><th>Rival</th><th>Sede</th></tr></thead><tbody><tr><td class="cell-fecha">F1</td><td class="cell-day">Jueves</td><td class="cell-time">4:30 PM</td><td class="cell-rival">BeSport (ESA)</td><td class="cell-venue"><a href="https://www.google.com/maps/search/BeSport+San+Salvador" target="_blank" rel="noopener">BeSport <span class="map-pin">📍</span></a></td></tr><tr><td class="cell-fecha">F2</td><td class="cell-day">Viernes</td><td class="cell-time">11:00 AM</td><td class="cell-rival">Jaguares (ESA)</td><td class="cell-venue"><a href="https://www.google.com/maps/search/BeSport+San+Salvador" target="_blank" rel="noopener">BeSport · Duela 1 <span class="map-pin">📍</span></a></td></tr><tr><td class="cell-fecha">F3</td><td class="cell-day">Sábado</td><td class="cell-time">9:00 AM</td><td class="cell-rival">Academia Flores Island (GUA)</td><td class="cell-venue"><a href="https://www.google.com/maps/search/Universidad+de+El+Salvador" target="_blank" rel="noopener">UES <span class="map-pin">📍</span></a></td></tr></tbody></table></section><section class="team-card" id="u13m" data-team="u13m"><header class="team-header"><div class="team-title"><span class="team-short">U13M</span><h2>U13 Masculino</h2><span class="team-dob">Nacidos 2013–2014</span></div><div class="team-actions"><a href="https://wa.me/?text=%F0%9F%8F%80%20%2AU13%20Masculino%2A%20%E2%80%94%20Capital%20Basketera%202026%0A_Nacidos%202013%E2%80%932014_%0A%0A%F0%9F%93%85%20%2ACalendario%3A%2A%0A%E2%80%A2%20F1%20Jueves%2012%3A00%20PM%20%E2%80%94%20vs%20Academia%20Flores%20Island%20%28GUA%29%20%E2%80%94%20FESABAL%201%0A%E2%80%A2%20F2%20Viernes%208%3A00%20AM%20%E2%80%94%20vs%20The%20Process%20%28GUA%29%20%E2%80%94%20BeSport%20%C2%B7%20Duela%202%0A%E2%80%A2%20F3%20Viernes%201%3A00%20PM%20%E2%80%94%20vs%20Leones%20%28GUA%29%20%E2%80%94%20BeSport%20%C2%B7%20Duela%202%0A%E2%80%A2%20F4%20Viernes%204%3A00%20PM%20%E2%80%94%20vs%20Santa%20Tecla%20%28ESA%29%20%E2%80%94%20BeSport%20%C2%B7%20Duela%202%0A%E2%80%A2%20F5%20S%C3%A1bado%2010%3A00%20AM%20%E2%80%94%20vs%20Grizzlies%20%28GUA%29%20%E2%80%94%20FESABAL%202%0A%0A%F0%9F%93%8B%20Calendario%20completo%3A%20https%3A//capitalbasketera.sivarsports.com%0A%0A%2ACTC%20%E2%80%94%20Campeones%20Trabajan%20Como%20Campeones%2A" target="_blank" rel="noopener" class="btn btn-wa" title="Compartir por WhatsApp">💬 Compartir</a><a href="./Capital_Basketera_2026_Team_u13m.pdf" download class="btn btn-pdf" title="Descargar PDF">⬇️ PDF</a></div></header><div class="groups"><div class="group group--sivar"><h4>Equipos en la categoría <span class="badge badge--sivar">SSA</span></h4><ul><li>Sivar Sports A (ESA)</li><li>Santa Tecla (ESA)</li><li>Academia Flores Island (GUA)</li><li>Leones (GUA)</li><li>The Process (GUA)</li><li>Grizzlies (GUA)</li></ul></div></div><h4 class="schedule-label">Calendario · 5 juegos</h4><table class="schedule"><thead><tr><th>Fecha</th><th>Día</th><th>Hora</th><th>Rival</th><th>Sede</th></tr></thead><tbody><tr><td class="cell-fecha">F1</td><td class="cell-day">Jueves</td><td class="cell-time">12:00 PM</td><td class="cell-rival">Academia Flores Island (GUA)</td><td class="cell-venue"><a href="https://www.google.com/maps/search/FESABAL+San+Salvador" target="_blank" rel="noopener">FESABAL 1 <span class="map-pin">📍</span></a></td></tr><tr><td class="cell-fecha">F2</td><td class="cell-day">Viernes</td><td class="cell-time">8:00 AM</td><td class="cell-rival">The Process (GUA)</td><td class="cell-venue"><a href="https://www.google.com/maps/search/BeSport+San+Salvador" target="_blank" rel="noopener">BeSport · Duela 2 <span class="map-pin">📍</span></a></td></tr><tr><td class="cell-fecha">F3</td><td class="cell-day">Viernes</td><td class="cell-time">1:00 PM</td><td class="cell-rival">Leones (GUA)</td><td class="cell-venue"><a href="https://www.google.com/maps/search/BeSport+San+Salvador" target="_blank" rel="noopener">BeSport · Duela 2 <span class="map-pin">📍</span></a></td></tr><tr><td class="cell-fecha">F4</td><td class="cell-day">Viernes</td><td class="cell-time">4:00 PM</td><td class="cell-rival">Santa Tecla (ESA)</td><td class="cell-venue"><a href="https://www.google.com/maps/search/BeSport+San+Salvador" target="_blank" rel="noopener">BeSport · Duela 2 <span class="map-pin">📍</span></a></td></tr><tr><td class="cell-fecha">F5</td><td class="cell-day">Sábado</td><td class="cell-time">10:00 AM</td><td class="cell-rival">Grizzlies (GUA)</td><td class="cell-venue"><a href="https://www.google.com/maps/search/FESABAL+San+Salvador" target="_blank" rel="noopener">FESABAL 2 <span class="map-pin">📍</span></a></td></tr></tbody></table></section><section class="team-card" id="u15f" data-team="u15f"><header class="team-header"><div class="team-title"><span class="team-short">U15F</span><h2>U15 Femenino</h2><span class="team-dob">Nacidas 2011–2012</span></div><div class="team-actions"><a href="https://wa.me/?text=%F0%9F%8F%80%20%2AU15%20Femenino%2A%20%E2%80%94%20Capital%20Basketera%202026%0A_Nacidas%202011%E2%80%932012_%0A%0AGrupo%20A%0A%0A%F0%9F%93%85%20%2ACalendario%3A%2A%0A%E2%80%A2%20F1%20Jueves%2011%3A00%20AM%20%E2%80%94%20vs%20Grizzlies%20%28GUA%29%20%E2%80%94%20FESABAL%202%0A%E2%80%A2%20F2%20Viernes%2011%3A00%20AM%20%E2%80%94%20vs%20Capitalinos%20503%20%28ESA%29%20%E2%80%94%20BeSport%20%C2%B7%20Duela%202%0A%E2%80%A2%20F3%20Viernes%205%3A00%20PM%20%E2%80%94%20vs%20Cachorritas%20%28MEX%29%20%E2%80%94%20BeSport%20%C2%B7%20Duela%203%0A%0A%F0%9F%93%8B%20Calendario%20completo%3A%20https%3A//capitalbasketera.sivarsports.com%0A%0A%2ACTC%20%E2%80%94%20Campeones%20Trabajan%20Como%20Campeones%2A" target="_blank" rel="noopener" class="btn btn-wa" title="Compartir por WhatsApp">💬 Compartir</a><a href="./Capital_Basketera_2026_Team_u15f.pdf" download class="btn btn-pdf" title="Descargar PDF">⬇️ PDF</a></div></header><div class="groups"><div class="group group--sivar"><h4>Grupo A <span class="badge badge--sivar">SSA</span></h4><ul><li>Sivar Sports A (ESA)</li><li>Capitalinos 503 (ESA)</li><li>Cachorritas (MEX)</li><li>Grizzlies (GUA)</li></ul></div><div class="group"><h4>Grupo B</h4><ul><li>Leones (GUA)</li><li>Santa Tecla (ESA)</li><li>Liceo San Luis (ESA)</li><li>FESABAL (ESA)</li></ul></div></div><h4 class="schedule-label">Calendario · 3 juegos</h4><table class="schedule"><thead><tr><th>Fecha</th><th>Día</th><th>Hora</th><th>Rival</th><th>Sede</th></tr></thead><tbody><tr><td class="cell-fecha">F1</td><td class="cell-day">Jueves</td><td class="cell-time">11:00 AM</td><td class="cell-rival">Grizzlies (GUA)</td><td class="cell-venue"><a href="https://www.google.com/maps/search/FESABAL+San+Salvador" target="_blank" rel="noopener">FESABAL 2 <span class="map-pin">📍</span></a></td></tr><tr><td class="cell-fecha">F2</td><td class="cell-day">Viernes</td><td class="cell-time">11:00 AM</td><td class="cell-rival">Capitalinos 503 (ESA)</td><td class="cell-venue"><a href="https://www.google.com/maps/search/BeSport+San+Salvador" target="_blank" rel="noopener">BeSport · Duela 2 <span class="map-pin">📍</span></a></td></tr><tr><td class="cell-fecha">F3</td><td class="cell-day">Viernes</td><td class="cell-time">5:00 PM</td><td class="cell-rival">Cachorritas (MEX)</td><td class="cell-venue"><a href="https://www.google.com/maps/search/BeSport+San+Salvador" target="_blank" rel="noopener">BeSport · Duela 3 <span class="map-pin">📍</span></a></td></tr></tbody></table></section><section class="team-card" id="u15m" data-team="u15m"><header class="team-header"><div class="team-title"><span class="team-short">U15M</span><h2>U15 Masculino</h2><span class="team-dob">Nacidos 2011–2012</span></div><div class="team-actions"><a href="https://wa.me/?text=%F0%9F%8F%80%20%2AU15%20Masculino%2A%20%E2%80%94%20Capital%20Basketera%202026%0A_Nacidos%202011%E2%80%932012_%0A%0AGrupo%20B%0A%0A%F0%9F%93%85%20%2ACalendario%3A%2A%0A%E2%80%A2%20F1%20Jueves%205%3A30%20PM%20%E2%80%94%20vs%20BeSport%20%28ESA%29%20%E2%80%94%20BeSport%0A%E2%80%A2%20F3%20Viernes%201%3A00%20PM%20%E2%80%94%20vs%20Banco%20Atl%C3%A1ntida%20%28Honduras%29%20%E2%80%94%20BeSport%20%C2%B7%20Duela%203%0A%E2%80%A2%20F3%20S%C3%A1bado%2010%3A00%20AM%20%E2%80%94%20vs%20The%20Process%20%28GUA%29%20%E2%80%94%20UES%0A%0A%F0%9F%93%8B%20Calendario%20completo%3A%20https%3A//capitalbasketera.sivarsports.com%0A%0A%2ACTC%20%E2%80%94%20Campeones%20Trabajan%20Como%20Campeones%2A" target="_blank" rel="noopener" class="btn btn-wa" title="Compartir por WhatsApp">💬 Compartir</a><a href="./Capital_Basketera_2026_Team_u15m.pdf" download class="btn btn-pdf" title="Descargar PDF">⬇️ PDF</a></div></header><div class="groups"><div class="group group--sivar"><h4>Grupo B <span class="badge badge--sivar">SSA</span></h4><ul><li>Sivar Sports A (ESA)</li><li>BeSport (ESA)</li><li>The Process (GUA)</li><li>Banco Atlántida (Honduras)</li></ul></div><div class="group"><h4>Grupo A</h4><ul><li>Jaguares (ESA)</li><li>Capitalinos 503 (ESA)</li><li>Academia Flores Island (GUA)</li><li>Grizzlies (GUA)</li><li>GONZ Auto Stars (BEL)</li></ul></div></div><h4 class="schedule-label">Calendario · 3 juegos</h4><table class="schedule"><thead><tr><th>Fecha</th><th>Día</th><th>Hora</th><th>Rival</th><th>Sede</th></tr></thead><tbody><tr><td class="cell-fecha">F1</td><td class="cell-day">Jueves</td><td class="cell-time">5:30 PM</td><td class="cell-rival">BeSport (ESA)</td><td class="cell-venue"><a href="https://www.google.com/maps/search/BeSport+San+Salvador" target="_blank" rel="noopener">BeSport <span class="map-pin">📍</span></a></td></tr><tr><td class="cell-fecha">F3</td><td class="cell-day">Viernes</td><td class="cell-time">1:00 PM</td><td class="cell-rival">Banco Atlántida (Honduras)</td><td class="cell-venue"><a href="https://www.google.com/maps/search/BeSport+San+Salvador" target="_blank" rel="noopener">BeSport · Duela 3 <span class="map-pin">📍</span></a></td></tr><tr><td class="cell-fecha">F3</td><td class="cell-day">Sábado</td><td class="cell-time">10:00 AM</td><td class="cell-rival">The Process (GUA)</td><td class="cell-venue"><a href="https://www.google.com/maps/search/Universidad+de+El+Salvador" target="_blank" rel="noopener">UES <span class="map-pin">📍</span></a></td></tr></tbody></table></section><section class="team-card" id="u17f" data-team="u17f"><header class="team-header"><div class="team-title"><span class="team-short">U17F</span><h2>U17 Femenino</h2><span class="team-dob">Nacidas 2009–2010</span></div><div class="team-actions"><a href="https://wa.me/?text=%F0%9F%8F%80%20%2AU17%20Femenino%2A%20%E2%80%94%20Capital%20Basketera%202026%0A_Nacidas%202009%E2%80%932010_%0A%0AGrupo%20A%0A%0A%F0%9F%93%85%20%2ACalendario%3A%2A%0A%E2%80%A2%20F2%20Viernes%208%3A00%20AM%20%E2%80%94%20vs%20Leones%20%28GUA%29%20%E2%80%94%20FESABAL%201%0A%E2%80%A2%20F2%20Viernes%2012%3A00%20PM%20%E2%80%94%20vs%20Academia%20Flores%20Island%20%28GUA%29%20%E2%80%94%20FESABAL%201%0A%E2%80%A2%20F4%20Viernes%207%3A00%20PM%20%E2%80%94%20vs%20Club%20Indios%20%28RD%29%20%E2%80%94%20BeSport%20%C2%B7%20Duela%203%0A%E2%80%A2%20F5%20S%C3%A1bado%202%3A00%20PM%20%E2%80%94%20vs%20San%20Luis%20Santa%20Ana%20%28ESA%29%20%E2%80%94%20FESABAL%201%0A%E2%80%A2%20F1%20Jueves%20%E2%80%94%20DESCANSO%20Fecha%201%0A%0A%F0%9F%93%8B%20Calendario%20completo%3A%20https%3A//capitalbasketera.sivarsports.com%0A%0A%2ACTC%20%E2%80%94%20Campeones%20Trabajan%20Como%20Campeones%2A" target="_blank" rel="noopener" class="btn btn-wa" title="Compartir por WhatsApp">💬 Compartir</a><a href="./Capital_Basketera_2026_Team_u17f.pdf" download class="btn btn-pdf" title="Descargar PDF">⬇️ PDF</a></div></header><div class="groups"><div class="group group--sivar"><h4>Grupo A <span class="badge badge--sivar">SSA</span></h4><ul><li>Sivar Sports A (ESA)</li><li>San Luis Santa Ana (ESA)</li><li>Leones (GUA)</li><li>Club Indios (RD)</li><li>Academia Flores Island (GUA)</li></ul></div><div class="group"><h4>Grupo B</h4><ul><li>Thunder (GUA)</li><li>Huskys (ESA)</li><li>C. San Francisco de Asís (ESA)</li><li>Fundación Della Vera (VEN)</li></ul></div></div><h4 class="schedule-label">Calendario · 4 juegos + 1 descanso</h4><table class="schedule"><thead><tr><th>Fecha</th><th>Día</th><th>Hora</th><th>Rival</th><th>Sede</th></tr></thead><tbody><tr><td class="cell-fecha">F2</td><td class="cell-day">Viernes</td><td class="cell-time">8:00 AM</td><td class="cell-rival">Leones (GUA)</td><td class="cell-venue"><a href="https://www.google.com/maps/search/FESABAL+San+Salvador" target="_blank" rel="noopener">FESABAL 1 <span class="map-pin">📍</span></a></td></tr><tr><td class="cell-fecha">F2</td><td class="cell-day">Viernes</td><td class="cell-time">12:00 PM</td><td class="cell-rival">Academia Flores Island (GUA)</td><td class="cell-venue"><a href="https://www.google.com/maps/search/FESABAL+San+Salvador" target="_blank" rel="noopener">FESABAL 1 <span class="map-pin">📍</span></a></td></tr><tr><td class="cell-fecha">F4</td><td class="cell-day">Viernes</td><td class="cell-time">7:00 PM</td><td class="cell-rival">Club Indios (RD)</td><td class="cell-venue"><a href="https://www.google.com/maps/search/BeSport+San+Salvador" target="_blank" rel="noopener">BeSport · Duela 3 <span class="map-pin">📍</span></a></td></tr><tr><td class="cell-fecha">F5</td><td class="cell-day">Sábado</td><td class="cell-time">2:00 PM</td><td class="cell-rival">San Luis Santa Ana (ESA)</td><td class="cell-venue"><a href="https://www.google.com/maps/search/FESABAL+San+Salvador" target="_blank" rel="noopener">FESABAL 1 <span class="map-pin">📍</span></a></td></tr><tr class="bye-row"><td class="cell-fecha">F1</td><td class="cell-day">Jueves</td><td class="cell-time">—</td><td class="cell-rival" colspan="2"><em>DESCANSO Fecha 1</em></td></tr></tbody></table></section><section class="team-card" id="u17m" data-team="u17m"><header class="team-header"><div class="team-title"><span class="team-short">U17M</span><h2>U17 Masculino</h2><span class="team-dob">Nacidos 2009–2010</span></div><div class="team-actions"><a href="https://wa.me/?text=%F0%9F%8F%80%20%2AU17%20Masculino%2A%20%E2%80%94%20Capital%20Basketera%202026%0A_Nacidos%202009%E2%80%932010_%0A%0AGrupo%20A%0A%0A%F0%9F%93%85%20%2ACalendario%3A%2A%0A%E2%80%A2%20F1%20Jueves%2011%3A00%20AM%20%E2%80%94%20vs%20Grizzlies%20%28GUA%29%20%E2%80%94%20Adolfo%20Pineda%2C%20Tecla%0A%E2%80%A2%20F2%20Viernes%209%3A00%20AM%20%E2%80%94%20vs%20Thunder%20%28GUA%29%20%E2%80%94%20FESABAL%202%0A%E2%80%A2%20F3%20Viernes%201%3A00%20PM%20%E2%80%94%20vs%20Club%20Baqueros%20%28COL%29%20%E2%80%94%20FESABAL%202%0A%E2%80%A2%20F4%20Viernes%206%3A00%20PM%20%E2%80%94%20vs%20Sonora%20%28MEX%29%20%E2%80%94%20FESABAL%202%0A%E2%80%A2%20F5%20S%C3%A1bado%203%3A00%20PM%20%E2%80%94%20vs%20Academia%20Flores%20Island%20%28GUA%29%20%E2%80%94%20FESABAL%202%0A%0A%F0%9F%93%8B%20Calendario%20completo%3A%20https%3A//capitalbasketera.sivarsports.com%0A%0A%2ACTC%20%E2%80%94%20Campeones%20Trabajan%20Como%20Campeones%2A" target="_blank" rel="noopener" class="btn btn-wa" title="Compartir por WhatsApp">💬 Compartir</a><a href="./Capital_Basketera_2026_Team_u17m.pdf" download class="btn btn-pdf" title="Descargar PDF">⬇️ PDF</a></div></header><div class="groups"><div class="group group--sivar"><h4>Grupo A <span class="badge badge--sivar">SSA</span></h4><ul><li>Sivar Sports A (ESA)</li><li>Thunder (GUA)</li><li>Academia Flores Island (GUA)</li><li>Grizzlies (GUA)</li><li>Club Baqueros (COL)</li><li>Sonora (MEX)</li></ul></div><div class="group"><h4>Grupo B</h4><ul><li>Academia De Martin Luna (ESA)</li><li>FESABAL (ESA)</li><li>Banco Atlántida (Honduras)</li><li>Mexas FMB (MEX)</li><li>AMBC – Celaya (MEX)</li><li>The Process (GUA)</li></ul></div></div><h4 class="schedule-label">Calendario · 5 juegos</h4><table class="schedule"><thead><tr><th>Fecha</th><th>Día</th><th>Hora</th><th>Rival</th><th>Sede</th></tr></thead><tbody><tr><td class="cell-fecha">F1</td><td class="cell-day">Jueves</td><td class="cell-time">11:00 AM</td><td class="cell-rival">Grizzlies (GUA)</td><td class="cell-venue"><a href="https://www.google.com/maps/search/Polideportivo+Adolfo+Pineda+Santa+Tecla" target="_blank" rel="noopener">Adolfo Pineda, Tecla <span class="map-pin">📍</span></a></td></tr><tr><td class="cell-fecha">F2</td><td class="cell-day">Viernes</td><td class="cell-time">9:00 AM</td><td class="cell-rival">Thunder (GUA)</td><td class="cell-venue"><a href="https://www.google.com/maps/search/FESABAL+San+Salvador" target="_blank" rel="noopener">FESABAL 2 <span class="map-pin">📍</span></a></td></tr><tr><td class="cell-fecha">F3</td><td class="cell-day">Viernes</td><td class="cell-time">1:00 PM</td><td class="cell-rival">Club Baqueros (COL)</td><td class="cell-venue"><a href="https://www.google.com/maps/search/FESABAL+San+Salvador" target="_blank" rel="noopener">FESABAL 2 <span class="map-pin">📍</span></a></td></tr><tr><td class="cell-fecha">F4</td><td class="cell-day">Viernes</td><td class="cell-time">6:00 PM</td><td class="cell-rival">Sonora (MEX)</td><td class="cell-venue"><a href="https://www.google.com/maps/search/FESABAL+San+Salvador" target="_blank" rel="noopener">FESABAL 2 <span class="map-pin">📍</span></a></td></tr><tr><td class="cell-fecha">F5</td><td class="cell-day">Sábado</td><td class="cell-time">3:00 PM</td><td class="cell-rival">Academia Flores Island (GUA)</td><td class="cell-venue"><a href="https://www.google.com/maps/search/FESABAL+San+Salvador" target="_blank" rel="noopener">FESABAL 2 <span class="map-pin">📍</span></a></td></tr></tbody></table></section></section><section id="venues"><h2 class="section-heading">Sedes</h2><ul class='venues'><li><a href="https://www.google.com/maps/search/Polideportivo+Adolfo+Pineda+Santa+Tecla" target="_blank" rel="noopener"><strong>Adolfo Pineda, Tecla</strong> <span class="venue-addr">Polideportivo Adolfo Pineda, Santa Tecla</span> <span class="map-pin">📍</span></a></li><li><a href="https://www.google.com/maps/search/BeSport+San+Salvador" target="_blank" rel="noopener"><strong>BeSport</strong> <span class="venue-addr">BeSport, San Salvador, El Salvador</span> <span class="map-pin">📍</span></a></li><li><a href="https://www.google.com/maps/search/FESABAL+San+Salvador" target="_blank" rel="noopener"><strong>FESABAL 1</strong> <span class="venue-addr">FESABAL Sede 1, San Salvador, El Salvador</span> <span class="map-pin">📍</span></a></li><li><a href="https://www.google.com/maps/search/FESABAL+San+Salvador" target="_blank" rel="noopener"><strong>FESABAL 2</strong> <span class="venue-addr">FESABAL Sede 2, San Salvador, El Salvador</span> <span class="map-pin">📍</span></a></li><li><a href="https://www.google.com/maps/search/Universidad+de+El+Salvador" target="_blank" rel="noopener"><strong>UES</strong> <span class="venue-addr">Universidad de El Salvador, San Salvador</span> <span class="map-pin">📍</span></a></li></ul></section></main><footer><div class="footer-tag">CTC · CAMPEONES TRABAJAN COMO CAMPEONES</div><div>Sivar Sports Academy · ADARS · El Salvador 🇸🇻</div><div class="footer-meta"><a href="https://sivarsports.com">sivarsports.com</a> · <a href="https://programacion.sivarsports.com">programacion</a></div></footer><script>
+  const GAMES = [{"idx": 1, "day": "Jueves", "fecha": 1, "time": "9:00 AM", "datetime_iso": "2026-05-28T09:00:00-06:00", "category": "U11 Mixto", "category_short": "U11M", "category_slug": "u11", "group": "—", "rival": "Academia Flores Island (GUA)", "sede": "FESABAL 1", "court": ""}, {"idx": 2, "day": "Jueves", "fecha": 1, "time": "11:00 AM", "datetime_iso": "2026-05-28T11:00:00-06:00", "category": "U15 Femenino", "category_short": "U15F", "category_slug": "u15f", "group": "A", "rival": "Grizzlies (GUA)", "sede": "FESABAL 2", "court": ""}, {"idx": 3, "day": "Jueves", "fecha": 1, "time": "11:00 AM", "datetime_iso": "2026-05-28T11:00:00-06:00", "category": "U17 Masculino", "category_short": "U17M", "category_slug": "u17m", "group": "A", "rival": "Grizzlies (GUA)", "sede": "Adolfo Pineda, Tecla", "court": ""}, {"idx": 4, "day": "Jueves", "fecha": 1, "time": "12:00 PM", "datetime_iso": "2026-05-28T12:00:00-06:00", "category": "U13 Masculino", "category_short": "U13M", "category_slug": "u13m", "group": "—", "rival": "Academia Flores Island (GUA)", "sede": "FESABAL 1", "court": ""}, {"idx": 5, "day": "Jueves", "fecha": 1, "time": "4:30 PM", "datetime_iso": "2026-05-28T16:30:00-06:00", "category": "U13 Femenino", "category_short": "U13F", "category_slug": "u13f", "group": "—", "rival": "BeSport (ESA)", "sede": "BeSport", "court": ""}, {"idx": 6, "day": "Jueves", "fecha": 1, "time": "5:30 PM", "datetime_iso": "2026-05-28T17:30:00-06:00", "category": "U15 Masculino", "category_short": "U15M", "category_slug": "u15m", "group": "B", "rival": "BeSport (ESA)", "sede": "BeSport", "court": ""}, {"idx": 7, "day": "Viernes", "fecha": 2, "time": "8:00 AM", "datetime_iso": "2026-05-29T08:00:00-06:00", "category": "U13 Masculino", "category_short": "U13M", "category_slug": "u13m", "group": "—", "rival": "The Process (GUA)", "sede": "BeSport", "court": "Duela 2"}, {"idx": 8, "day": "Viernes", "fecha": 2, "time": "8:00 AM", "datetime_iso": "2026-05-29T08:00:00-06:00", "category": "U17 Femenino", "category_short": "U17F", "category_slug": "u17f", "group": "A", "rival": "Leones (GUA)", "sede": "FESABAL 1", "court": ""}, {"idx": 9, "day": "Viernes", "fecha": 2, "time": "9:00 AM", "datetime_iso": "2026-05-29T09:00:00-06:00", "category": "U11 Mixto", "category_short": "U11M", "category_slug": "u11", "group": "—", "rival": "Leones (GUA)", "sede": "BeSport", "court": "Duela 1"}, {"idx": 10, "day": "Viernes", "fecha": 2, "time": "9:00 AM", "datetime_iso": "2026-05-29T09:00:00-06:00", "category": "U17 Masculino", "category_short": "U17M", "category_slug": "u17m", "group": "A", "rival": "Thunder (GUA)", "sede": "FESABAL 2", "court": ""}, {"idx": 11, "day": "Viernes", "fecha": 2, "time": "11:00 AM", "datetime_iso": "2026-05-29T11:00:00-06:00", "category": "U13 Femenino", "category_short": "U13F", "category_slug": "u13f", "group": "—", "rival": "Jaguares (ESA)", "sede": "BeSport", "court": "Duela 1"}, {"idx": 12, "day": "Viernes", "fecha": 2, "time": "11:00 AM", "datetime_iso": "2026-05-29T11:00:00-06:00", "category": "U15 Femenino", "category_short": "U15F", "category_slug": "u15f", "group": "A", "rival": "Capitalinos 503 (ESA)", "sede": "BeSport", "court": "Duela 2"}, {"idx": 13, "day": "Viernes", "fecha": 2, "time": "12:00 PM", "datetime_iso": "2026-05-29T12:00:00-06:00", "category": "U17 Femenino", "category_short": "U17F", "category_slug": "u17f", "group": "A", "rival": "Academia Flores Island (GUA)", "sede": "FESABAL 1", "court": ""}, {"idx": 14, "day": "Viernes", "fecha": 3, "time": "1:00 PM", "datetime_iso": "2026-05-29T13:00:00-06:00", "category": "U11 Mixto", "category_short": "U11M", "category_slug": "u11", "group": "—", "rival": "Jaguares (ESA)", "sede": "BeSport", "court": "Duela 1"}, {"idx": 15, "day": "Viernes", "fecha": 3, "time": "1:00 PM", "datetime_iso": "2026-05-29T13:00:00-06:00", "category": "U13 Masculino", "category_short": "U13M", "category_slug": "u13m", "group": "—", "rival": "Leones (GUA)", "sede": "BeSport", "court": "Duela 2"}, {"idx": 16, "day": "Viernes", "fecha": 3, "time": "1:00 PM", "datetime_iso": "2026-05-29T13:00:00-06:00", "category": "U15 Masculino", "category_short": "U15M", "category_slug": "u15m", "group": "B", "rival": "Banco Atlántida (Honduras)", "sede": "BeSport", "court": "Duela 3"}, {"idx": 17, "day": "Viernes", "fecha": 3, "time": "1:00 PM", "datetime_iso": "2026-05-29T13:00:00-06:00", "category": "U17 Masculino", "category_short": "U17M", "category_slug": "u17m", "group": "A", "rival": "Club Baqueros (COL)", "sede": "FESABAL 2", "court": ""}, {"idx": 18, "day": "Viernes", "fecha": 4, "time": "4:00 PM", "datetime_iso": "2026-05-29T16:00:00-06:00", "category": "U11 Mixto", "category_short": "U11M", "category_slug": "u11", "group": "—", "rival": "Grizzlies (GUA)", "sede": "BeSport", "court": "Duela 1"}, {"idx": 19, "day": "Viernes", "fecha": 4, "time": "4:00 PM", "datetime_iso": "2026-05-29T16:00:00-06:00", "category": "U13 Masculino", "category_short": "U13M", "category_slug": "u13m", "group": "—", "rival": "Santa Tecla (ESA)", "sede": "BeSport", "court": "Duela 2"}, {"idx": 20, "day": "Viernes", "fecha": 3, "time": "5:00 PM", "datetime_iso": "2026-05-29T17:00:00-06:00", "category": "U15 Femenino", "category_short": "U15F", "category_slug": "u15f", "group": "A", "rival": "Cachorritas (MEX)", "sede": "BeSport", "court": "Duela 3"}, {"idx": 21, "day": "Viernes", "fecha": 4, "time": "6:00 PM", "datetime_iso": "2026-05-29T18:00:00-06:00", "category": "U17 Masculino", "category_short": "U17M", "category_slug": "u17m", "group": "A", "rival": "Sonora (MEX)", "sede": "FESABAL 2", "court": ""}, {"idx": 22, "day": "Viernes", "fecha": 4, "time": "7:00 PM", "datetime_iso": "2026-05-29T19:00:00-06:00", "category": "U17 Femenino", "category_short": "U17F", "category_slug": "u17f", "group": "A", "rival": "Club Indios (RD)", "sede": "BeSport", "court": "Duela 3"}, {"idx": 23, "day": "Sábado", "fecha": 3, "time": "9:00 AM", "datetime_iso": "2026-05-30T09:00:00-06:00", "category": "U13 Femenino", "category_short": "U13F", "category_slug": "u13f", "group": "—", "rival": "Academia Flores Island (GUA)", "sede": "UES", "court": ""}, {"idx": 24, "day": "Sábado", "fecha": 5, "time": "10:00 AM", "datetime_iso": "2026-05-30T10:00:00-06:00", "category": "U13 Masculino", "category_short": "U13M", "category_slug": "u13m", "group": "—", "rival": "Grizzlies (GUA)", "sede": "FESABAL 2", "court": ""}, {"idx": 25, "day": "Sábado", "fecha": 3, "time": "10:00 AM", "datetime_iso": "2026-05-30T10:00:00-06:00", "category": "U15 Masculino", "category_short": "U15M", "category_slug": "u15m", "group": "B", "rival": "The Process (GUA)", "sede": "UES", "court": ""}, {"idx": 26, "day": "Sábado", "fecha": 5, "time": "2:00 PM", "datetime_iso": "2026-05-30T14:00:00-06:00", "category": "U17 Femenino", "category_short": "U17F", "category_slug": "u17f", "group": "A", "rival": "San Luis Santa Ana (ESA)", "sede": "FESABAL 1", "court": ""}, {"idx": 27, "day": "Sábado", "fecha": 5, "time": "3:00 PM", "datetime_iso": "2026-05-30T15:00:00-06:00", "category": "U17 Masculino", "category_short": "U17M", "category_slug": "u17m", "group": "A", "rival": "Academia Flores Island (GUA)", "sede": "FESABAL 2", "court": ""}];
+
+  const dayButtons = document.querySelectorAll('#dayNav button');
+  const teamButtons = document.querySelectorAll('#teamNav button');
+  const teamCards = document.querySelectorAll('.team-card');
+  const masterRows = document.querySelectorAll('.master-schedule tbody tr');
+  let currentDay = 'all';
+  let currentTeam = 'all';
+
+  function applyFilters() {
+    teamCards.forEach(card => {
+      card.classList.toggle('hidden', currentTeam !== 'all' && card.dataset.team !== currentTeam);
+    });
+    masterRows.forEach(row => {
+      const dayMatch = currentDay === 'all' || row.dataset.day === currentDay;
+      const teamMatch = currentTeam === 'all' || row.dataset.team === currentTeam;
+      row.style.display = (dayMatch && teamMatch) ? '' : 'none';
+    });
+  }
+
+  dayButtons.forEach(btn => {
+    btn.addEventListener('click', () => {
+      currentDay = btn.dataset.day;
+      dayButtons.forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      applyFilters();
+    });
+  });
+  teamButtons.forEach(btn => {
+    btn.addEventListener('click', () => {
+      currentTeam = btn.dataset.team;
+      teamButtons.forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      applyFilters();
+    });
+  });
+
+  document.querySelectorAll('.team-tag').forEach(tag => {
+    tag.addEventListener('click', e => {
+      e.preventDefault();
+      const target = document.querySelector(tag.getAttribute('href'));
+      if (target) {
+        document.querySelector('#teamNav [data-team="all"]').click();
+        setTimeout(() => target.scrollIntoView({behavior: 'smooth', block: 'start'}), 50);
+      }
+    });
+  });
+
+  function findNextGame() {
+    const now = Date.now();
+    let next = null, live = null;
+    for (const g of GAMES) {
+      const start = new Date(g.datetime_iso).getTime();
+      const end = start + (60 * 60 * 1000);
+      if (start <= now && now < end) {
+        if (!live) live = g;
+      } else if (start > now) {
+        if (!next || start < new Date(next.datetime_iso).getTime()) {
+          next = g;
+        }
+      }
+    }
+    return { next, live };
+  }
+
+  function fmtCountdown(ms) {
+    if (ms < 0) return "—";
+    const total = Math.floor(ms / 1000);
+    const d = Math.floor(total / 86400);
+    const h = Math.floor((total % 86400) / 3600);
+    const m = Math.floor((total % 3600) / 60);
+    const s = total % 60;
+    if (d > 0) return d + 'd ' + h + 'h ' + m + 'm';
+    if (h > 0) return h + 'h ' + m + 'm ' + String(s).padStart(2,'0') + 's';
+    return m + 'm ' + String(s).padStart(2,'0') + 's';
+  }
+
+  function updateBanner() {
+    const banner = document.getElementById('nextBanner');
+    const labelEl = document.getElementById('nextLabel');
+    const gameEl = document.getElementById('nextGame');
+    const metaEl = document.getElementById('nextMeta');
+    const cdEl = document.getElementById('nextCountdown');
+    const { next, live } = findNextGame();
+
+    if (live) {
+      banner.style.display = 'flex';
+      banner.classList.add('live'); banner.classList.remove('done');
+      labelEl.textContent = '🔴 EN VIVO AHORA';
+      gameEl.textContent = live.category_short + ' vs ' + live.rival;
+      const courtTxt = live.court ? ' · ' + live.court : '';
+      metaEl.textContent = live.sede + courtTxt;
+      cdEl.textContent = 'EN JUEGO';
+    } else if (next) {
+      banner.style.display = 'flex';
+      banner.classList.remove('live', 'done');
+      labelEl.textContent = 'Próximo juego SSA';
+      gameEl.textContent = next.category_short + ' vs ' + next.rival;
+      const courtTxt = next.court ? ' · ' + next.court : '';
+      metaEl.textContent = next.day + ' ' + next.time + ' · ' + next.sede + courtTxt;
+      const diff = new Date(next.datetime_iso).getTime() - Date.now();
+      cdEl.textContent = fmtCountdown(diff);
+    } else {
+      banner.style.display = 'flex';
+      banner.classList.add('done'); banner.classList.remove('live');
+      labelEl.textContent = '¡Torneo finalizado!';
+      gameEl.textContent = 'Capital Basketera 2026';
+      metaEl.textContent = 'Gracias por seguirnos · CTC';
+      cdEl.textContent = '🏀';
+    }
+  }
+
+  updateBanner();
+  setInterval(updateBanner, 1000);
+</script></body></html>
